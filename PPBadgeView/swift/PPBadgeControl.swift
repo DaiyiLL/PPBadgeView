@@ -98,6 +98,12 @@ open class PPBadgeControl: UIControl {
         }
     }
     
+    open var textColor: UIColor = .white {
+        didSet {
+            self.textLabel.textColor = textColor
+        }
+    }
+    
     private func setupSubviews() {
         layer.masksToBounds = true
         layer.cornerRadius = 9.0

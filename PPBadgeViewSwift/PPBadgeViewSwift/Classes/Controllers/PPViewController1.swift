@@ -47,6 +47,7 @@ class PPViewController1: UIViewController {
         self.navigationItem.rightBarButtonItem?.pp.addBadge(number: 5000000)
         self.navigationItem.rightBarButtonItem?.pp.moveBadge(x: -5, y: 0)
         self.navigationItem.rightBarButtonItem?.pp.setBadge(flexMode: .head)
+        self.navigationItem.rightBarButtonItem?.pp.badgeView.textColor = .green
     }
     
     func setupViews() {
